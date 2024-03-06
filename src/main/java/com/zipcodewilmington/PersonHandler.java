@@ -24,6 +24,14 @@ public class PersonHandler {
                 // append `stringRepresentation` to `result` variable
 
             // end loop
+        int counter = 0;
+        while(counter < personArray.length){
+            //String stringRepresentation = personArray[counter].toString();
+            //result += stringRepresentation;
+            result += personArray[counter].toString();
+            counter++;
+        }
+
         return result;
     }
 
@@ -41,6 +49,9 @@ public class PersonHandler {
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
             // end loop
+        for(int i = 0; i < personArray.length; i++){
+            result += personArray[i].toString();
+        }
 
         return result;
     }
@@ -49,6 +60,8 @@ public class PersonHandler {
 
     public String forEachLoop() {
         String result = "";
+        String[] str = new String[personArray.length];
+        int counter = 0;
         // identify array's type
         // identify array's variable-name
 
@@ -57,6 +70,10 @@ public class PersonHandler {
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
             // end loop
+        for(String s : str){
+            result += personArray[counter].toString();
+            counter++;
+        }
 
         return result;
     }
